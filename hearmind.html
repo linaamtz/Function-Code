@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Hear Mind</title>
+    <link rel="stylesheet" href="../CSS/hearmind.css">
+</head>
+    <body class="home page-template-default page page-id-31 wp-embed-responsive">
+        <header>
+            <div id="logo"><img id="simbolo" src="../IMG/SimboloFC.png" alt="">
+          <h3 id="titlelogo">FUNCTION CODE</h3></div>
+              <div class="menu">
+                  <ul class="navigation">
+                      <li><a href="principal.html">Home</a></li>
+                      <li><a href="quienessomos.html">¿Quienes somos?</a></li>
+                      <li><a href="Contactanos.html">Contactanos</a></li>
+                      <li><a href="Proyectos.html">Proyectos</a></li>
+                  </ul>
+                  <div class="buscar">
+                      <span class="icon">
+                          <ion-icon name="search-outline" class="buscarBtn"></ion-icon>
+                          <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                      </span>
+                  </div>
+                  <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+              </div>
+              <div class="buscarBox">
+                  <input type="text" placeholder="buscar. . .">        
+              </div>
+          </header>
+          
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script> 
+          let buscarBtn=document.querySelector('.buscarBtn');
+          let closeBtn=document.querySelector('.closeBtn');
+          let buscarBox=document.querySelector('.buscarBox');
+          let navigation=document.querySelector('.navigation');
+          let menuToggle=document.querySelector('.menuToggle');
+          let header=document.querySelector('header');
+          buscarBtn.onclick= function(){
+              buscarBox.classList.add('active');
+              closeBtn.classList.add('active');
+              buscarBtn.classList.add('active');
+              menuToggle.classList.add('hide');
+              header.classList.remove('open');
+          }
+          closeBtn.onclick=function(){
+              buscarBox.classList.remove('active');
+              closeBtn.classList.remove('active');
+              buscarBtn.classList.remove('active');
+              menuToggle.classList.remove('hide');
+          }
+          menuToggle.onclick=function(){
+              header.classList.toggle('open');
+              buscarBox.classList.remove('active');
+              closeBtn.classList.remove('active');
+              buscarBtn.classList.remove('active');
+          }
+          </script>
+          <main>
+            <div id="Inicio">
+                <h1 id="titulo">HEAR MIND</h1>
+                <img id="ilustracion" src="../IMG/imghm.jpg" alt="">
+                <p id="pinicial">Hear Mind es una plataforma virtual que busca incentivar la vida saludable y visibilizar más <br> 
+                    un aspecto tan importante como la salud mental. Llegando a la población colombiana brindando <br> 
+                    un servicio de calidad, en el que todos podamos ser escuchados y recibir la atención necesaria, <br> 
+                    se pueda encontrar un espacio seguro, donde se generen objetivos personalizados para alcanzar <br>
+                    la mejor versión de nosotros.  </p>
+            </div>
+            <div id="Contenedor">
+                <div id="cont-logo">
+                <h2>LOGO</h2>
+                <img id="logohear" src="../IMG/LOGO HEAR MIND 1 (1).jpg" alt="">
+                <p id="plogo">Hear Mind se traduce al español como <br>
+                    "Escuchar la mente", se eligió este nombre <br>
+                    debido a que es muy importante escuchar <br>
+                    nuestros pensamientos, ideas, etc, y <br> 
+                    gestionarlos nos lleva a  tener una vida <br>
+                    mentalmente sana incluyendo otros factores. <br>
+                    El logo esta compuesto por una margarita ya <br>
+                    que en el proceso de indagación descubrimos <br>
+                    que esta es la flor de la salud mental, y <br>
+                    queriamos que el logo tuviera un significado <br>
+                    y reflejara lo que es la plataforma.
+            </div>
+            <div id="cont-izq">
+                <h4>¿POR QUÉ?</h4>
+                <p id="p3">Vivimos en un mundo en el que la salud <br>
+                    mental es un tema que se deja en segundo <br> 
+                    plano. Con nuestra plataforma queremos <br> 
+                    ayudar a que más personas tomen en <br> 
+                    cuenta que su salud mental es importante<br> 
+                    para el bienestar personal  cumpliendo <br> 
+                  así el objetivo número 3 de 
+                    las ODS que  <br>dice:
+<br>
+<br>
+                    “Garantizar una vida sana y promover el <br> bienestar para todos en todas las edades”</p>
+            </div>
+        </div>
+            </div>
+               
+                <div id="cont-just">
+                    <h5>PROCESO DE INVESTIGACIÓN</h5>
+                    <p id="p-just">Según el Centro de Investigaciones Sociológicas (CIS), desde el inicio de la pandemia hasta la actualidad, <br>
+                        un 6,4% de la población ha acudido a un profesional de la salud mental por algún tipo de síntoma, siendo <br>
+                        el mayor porcentaje un 43,7% por ansiedad y un 35,5% por depresión. Sin embargo, en Colombia uno de  <br> 
+                        cada diez pacientes recibe la atención psicológica que necesita. Nuestra meta es ayudar a que estas <br> 
+                        personas puedan tener el apoyo que requieren logrando una calidad de vida mejor a base de talleres, <br> 
+                        desafíos y atención psicológica por profesionales. Resolviendo así, el objetivo número 3 de las ODS el cual <br> 
+                        nos indica: “Una vida sana y promover el bienestar para todos en todas las edades” por medio de una <br> 
+                        aplicación muy completa que facilitará el cumplimiento de esta meta.</p>
+                    <img class="imgj" src="../IMG/investigacion.png" alt="">
+                </div>
+                <div id="cont-pro">
+                    <h6>¿QUE VA A CONTENER ESTA PLATAFORMA?</h6>
+                    <div id="items">
+                        <div class="cont-item0">
+                            <img class="imgp" src="../IMG/talleres.png" alt="">
+                            <H1>Actividades</H1>
+                            <p class="p-item"> Esta sección cuenta con talleres focalizados, ejercicios guiados de respiración, y  creamos una actividad de un reto diario, donde habrá una sesión donde cada día el usuario deberá hacer un reto hasta lograr su objetivo, por lo que tendrá seguimiento de su progreso. </p>
+                        </div>
+                        <div class="cont-item0">
+                            <img class="imgp" src="../IMG/entretenimiento.png" alt="">
+                            <H1>Entretenimiento e información</H1>
+                            <p class="p-item">Informarse es importante por lo que habrá un blog, recomendación de peliculas sobre salud mental, libros en venta y gratuitos, y por ultimo juegos para ayudar al autocuidado cognitivo.</p>
+                        </div>
+                        <div class="cont-item0">
+                            <img class="imgp" src="../IMG/bienestar.png" alt="">
+                            <H1>Bienestar</H1>
+                            <p class="p-item">En esta sección encontrara estadisticas del bienestar del usuario, como el estado de animo, habitos, etc. </p>
+                        </div>
+                        <div class="cont-item0">
+                            <img class="imgp" src="../IMG/comunidad.png" alt="">
+                            <H1>Comunidad</H1>
+                            <p class="p-item">Queremos que nuestros usuarios encuentren un espacio seguro en nuestra plataforma, por lo que tendrán una comunidad donde puedan interactuar y compartir sus experiencias, opiniones, etc.</p>
+                        </div>
+                        <div class="cont-item0">
+                            <img class="imgp" src="../IMG/chat.png" alt="">
+                            <H1>Chat virtual</H1>
+                            <p class="p-item">Un chat para comunicarse, recibir consejos, crear un espacio ameno. </p>
+                        </div>
+                        <div class="cont-item0">
+                            <img class="imgp" src="../IMG/citas.png" alt="">
+                            <H1>Especialistas</H1>
+                            <p class="p-item">Citas con especialistas donde las primeras dos secciones serán gratis y las demás a un precio más económico.</p>
+                        </div>
+                    </div>
+                </div>
+          </main>
+          <footer>
+            <div id="cont-footer">
+                <div class="cont-logo"> 
+                    <img class="logo" src="../IMG/LOGO FUNCTION CODE OF.png" alt="">
+                  </div>
+                <div class="contacto">
+                    <H4 class="t">Contacto</H4>
+                    <img class="icons" src="../IMG/telefono.png" alt="">
+                    <p class="text-footer">+57 318 3082320</p>
+                    <img class="icons" src="../IMG/email.png" alt="">
+                    <p class="text-footer">functioncode.soft@gmail.com</p>
+                </div>
+                <div class="redes">
+                    <H4 class="t">Redes Sociales</H4>
+                    <img class="ig" src="../IMG/instagramc.png" alt="">
+                    <img class="face" src="../IMG/iconfacebook.png" alt="">
+                    <img class="whats" src="../IMG/iconwhatsapp.png" alt="">
+                </div>
+                <div class="text-end">
+                    <h5 class="credito">© 2024. All rights reserved | Function Code</h5>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

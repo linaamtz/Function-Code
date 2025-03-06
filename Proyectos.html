@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="../CSS/Proyectos.css">
+</head>
+    <body class="home page-template-default page page-id-31 wp-embed-responsive">
+        <header>
+            <div id="logo"><img id="simbolo" src="../IMG/SimboloFC.png" alt="">
+          <h3 id="titlelogo">FUNCTION CODE</h3></div>
+              <div class="menu">
+                  <ul class="navigation">
+                      <li><a href="principal.html">Home</a></li>
+                      <li><a href="quienessomos.html">¿Quienes somos?</a></li>
+                      <li><a href="Contactanos.html">Contactanos</a></li>
+                      <li><a href="#">Proyectos</a></li>
+                  </ul>
+                  <div class="buscar">
+                      <span class="icon">
+                          <ion-icon name="search-outline" class="buscarBtn"></ion-icon>
+                          <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                      </span>
+                  </div>
+                  <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+              </div>
+              <div class="buscarBox">
+                  <input type="text" placeholder="buscar. . .">        
+              </div>
+          </header>
+          
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script> 
+          let buscarBtn=document.querySelector('.buscarBtn');
+          let closeBtn=document.querySelector('.closeBtn');
+          let buscarBox=document.querySelector('.buscarBox');
+          let navigation=document.querySelector('.navigation');
+          let menuToggle=document.querySelector('.menuToggle');
+          let header=document.querySelector('header');
+          buscarBtn.onclick= function(){
+              buscarBox.classList.add('active');
+              closeBtn.classList.add('active');
+              buscarBtn.classList.add('active');
+              menuToggle.classList.add('hide');
+              header.classList.remove('open');
+          }
+          closeBtn.onclick=function(){
+              buscarBox.classList.remove('active');
+              closeBtn.classList.remove('active');
+              buscarBtn.classList.remove('active');
+              menuToggle.classList.remove('hide');
+          }
+          menuToggle.onclick=function(){
+              header.classList.toggle('open');
+              buscarBox.classList.remove('active');
+              closeBtn.classList.remove('active');
+              buscarBtn.classList.remove('active');
+          }
+          </script>
+          <main>
+            
+            <div  class="titulo"><h1>NUESTROS PROYECTOS</h1></div>
+            <div id="Proyectos">
+            <div class="img-proy">
+                <img src="../IMG/LOGO HEAR MIND.jpg" alt="">
+                <div class="hover"><a href="hearmind.html"> <button>Conoce más</button></a></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo2.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo3.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo4.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo5.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo6.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo7.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+            <div class="img-proy">
+                <img src="../IMG/logo8.png" alt="">
+                <div class="hover"><button>Conoce más</button></div>
+            </div>
+        </div>
+          </main>
+          <footer>
+            <div id="cont-footer">
+                <div class="cont-logo"> 
+                    <img class="logo" src="../IMG/LOGO FUNCTION CODE OF.png" alt="">
+                  </div>
+                <div class="contacto">
+                    <h4>Contacto</h4>
+                    <img class="icons" src="../IMG/telefono.png" alt="">
+                    <p class="text-footer">+57 318 3082320</p>
+                    <img class="icons" src="../IMG/email.png" alt="">
+                    <p class="text-footer">functioncode.soft@gmail.com</p>
+                </div>
+                <div class="redes">
+                    <h4>Redes Sociales</h4>
+                    <img class="ig" src="../IMG/instagramc.png" alt="">
+                    <img class="face" src="../IMG/iconfacebook.png" alt="">
+                    <img class="whats" src="../IMG/iconwhatsapp.png" alt="">
+                </div>
+                <div class="text-end">
+                    <h5>© 2024. All rights reserved | Function Code</h5>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>

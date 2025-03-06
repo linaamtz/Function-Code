@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quienes somos?</title>
+    <link rel="stylesheet" href="../CSS/quienessomos.css">
+</head>
+<body class="home page-template-default page page-id-31 wp-embed-responsive">
+    <header>
+        <div id="logo"><img id="simbolo" src="../IMG/SimboloFC.png" alt="">
+      <h3 id="titlelogo">FUNCTION CODE</h3></div>
+          <div class="menu">
+              <ul class="navigation">
+                  <li><a href="principal.html">Home</a></li>
+                  <li><a href="#">¿Quienes somos?</a></li>
+                  <li><a href="Contactanos.html">Contactanos</a></li>
+                  <li><a href="Proyectos.html">Proyectos</a></li>
+              </ul>
+              <div class="buscar">
+                  <span class="icon">
+                      <ion-icon name="search-outline" class="buscarBtn"></ion-icon>
+                      <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                  </span>
+              </div>
+              <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+          </div>
+          <div class="buscarBox">
+              <input type="text" placeholder="buscar. . .">        
+          </div>
+      </header>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script> 
+      let buscarBtn=document.querySelector('.buscarBtn');
+      let closeBtn=document.querySelector('.closeBtn');
+      let buscarBox=document.querySelector('.buscarBox');
+      let navigation=document.querySelector('.navigation');
+      let menuToggle=document.querySelector('.menuToggle');
+      let header=document.querySelector('header');
+      buscarBtn.onclick= function(){
+          buscarBox.classList.add('active');
+          closeBtn.classList.add('active');
+          buscarBtn.classList.add('active');
+          menuToggle.classList.add('hide');
+          header.classList.remove('open');
+      }
+      closeBtn.onclick=function(){
+          buscarBox.classList.remove('active');
+          closeBtn.classList.remove('active');
+          buscarBtn.classList.remove('active');
+          menuToggle.classList.remove('hide');
+      }
+      menuToggle.onclick=function(){
+          header.classList.toggle('open');
+          buscarBox.classList.remove('active');
+          closeBtn.classList.remove('active');
+          buscarBtn.classList.remove('active');
+      }
+      </script>
+    <div id="cont-inicio"><div  id="titulo"><h1>¿QUIÉNES SOMOS?</h1></div>
+    <section id="parrafo">
+        <p>Somos Function Code una empresa desarrolladora de Software, creamos nuestra empresa con el fin de aportar a la sociedad a través <br>
+        de nuestra formación, elaborando proyectos innovadores que sean extraordinarios, donde se adapte a las necesidades de cada propósito. <br>
+        Queremos llegar a ser una gran empresa reconocida por nuestros proyectos creados, adicionalmente por la innovación, facilidad, ligeresa, y creatividad.  
+        </p>
+    </section>
+    <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div></div>
+    <main>
+        <div id="titulo2"><h2>NUESTRO EQUIPO</h2></div>
+        <div id="Integrantes">
+            <div class="img-int">
+                <img src="../IMG/Tina.jpeg" alt="">   
+                <h3>PROGRAMADORA Y ANALISTA <br>
+                Valentina Rodríguez</h3>
+            </div>
+            <div class="img-int">
+                <img src="../IMG/Lina1.jpg" alt=""> 
+                <h3>PROGRAMADORA Y DISEÑADORA<br>
+                Lina Martínez</h3>  
+            </div>
+            <div class="img-int">
+                <img src="../IMG/karen.jpeg" alt="">   
+                <h3>PROGRAMADORA Y DOCUMENTADORA <br>
+                Karen Ramos</h3>
+            </div>
+            <div class="img-int">
+                <img src="../IMG/sara.jpeg" alt="">  
+                <h3>PROGRAMADORA Y ADMINISTRADORA <br>
+                    DE LA CONFIGURACIÓN <br>
+                Sara Cifuentes</h3> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="cont-footer">
+            <div class="cont-logo"> 
+                <img class="logo" src="../IMG/LOGO FUNCTION CODE OF.png" alt="">
+              </div>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <img class="icons" src="../IMG/telefono.png" alt="">
+                <p class="text-footer">+57 318 3082320</p>
+                <img class="icons" src="../IMG/email.png" alt="">
+                <p class="text-footer">functioncode.soft@gmail.com</p>
+            </div>
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <img class="ig" src="../IMG/instagramc.png" alt="">
+                <img class="face" src="../IMG/iconfacebook.png" alt="">
+                <img class="whats" src="../IMG/iconwhatsapp.png" alt="">
+            </div>
+            <div class="text-end">
+                <h5>© 2024. All rights reserved | Function Code</h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
